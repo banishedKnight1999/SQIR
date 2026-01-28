@@ -15,6 +15,7 @@ If you are interested in learning more about formal verification of quantum prog
 ## Table of Contents
 
 - [SQIR \& VOQC](#sqir--voqc)
+  - [RC Extensions (Recursive Countable QHL)](#rc-extensions-recursive-countable-qhl)
   - [Table of Contents](#table-of-contents)
   - [Setup](#setup)
   - [Compilation](#compilation)
@@ -25,6 +26,12 @@ If you are interested in learning more about formal verification of quantum prog
     - [examples](#examples)
   - [Acknowledgements](#acknowledgements)
   - [Citations](#citations)
+
+## RC Extensions (Recursive Countable QHL)
+
+This fork adds a recursive, countable variant of Quantum Hoare Logic on top of SQIR.
+It introduces a recursive command form (`CCall`), countable deterministic assertions (`IConj`), fixed-point semantics for recursive calls, and a weakest-precondition calculus with soundness under stated semantic assumptions.
+New files live in `SQIR/RC_Syntax.v`, `SQIR/RC_Semantics.v`, and `SQIR/RC_Logic.v`, plus example case studies in `SQIR/RUSExample.v`, `SQIR/QFTExample.v`, and `SQIR/QuantumRandomWalkExample.v`.
 
 ## Setup
 
