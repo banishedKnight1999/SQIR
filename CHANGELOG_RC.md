@@ -6,9 +6,9 @@
 - `SQIR/RC_Logic.v`: weakest-precondition calculus and soundness under stated semantic assumptions.
 
 ### Examples
-- `SQIR/RUSExample.v`: Recursive Unitary Sampling (RUS) gate.
-- `SQIR/QFTExample.v`: recursive QFT via procedure calls.
-- `SQIR/QuantumRandomWalkExample.v`: quantum random walk with `CWhile` and countable WP.
+- `examples/examples/RUSExample.v`: Recursive Unitary Sampling (RUS) gate.
+- `examples/examples/QFTExample.v`: recursive QFT via procedure calls.
+- `examples/examples/QuantumRandomWalkExample.v`: quantum random walk with `CWhile` and countable WP.
 
 ### Compatibility and packaging
 - `SQIR/UnitarySem.v`, `SQIR/UnitaryOps.v`: adjusted imports to use `From SQIR Require ...`.
