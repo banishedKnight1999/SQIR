@@ -2,6 +2,12 @@
 
 <img align="right" src="logo.png">
 
+## RC Extensions (Recursive Countable QHL)
+
+This fork adds a recursive, countable variant of Quantum Hoare Logic on top of SQIR.
+It introduces a recursive command form (`CCall`), countable deterministic assertions (`IConj`), fixed-point semantics for recursive calls, and a weakest-precondition calculus with soundness under stated semantic assumptions.
+New files live in `SQIR/RC_Syntax.v`, `SQIR/RC_Semantics.v`, and `SQIR/RC_Logic.v`, plus example case studies in `SQIR/RUSExample.v`, `SQIR/QFTExample.v`, and `SQIR/QuantumRandomWalkExample.v`.
+
 SQIR is a **S**mall **Q**uantum **I**ntermediate **R**epresentation for quantum programs. Its intended use is as an intermediate representation in a **V**erified **O**ptimizer for **Q**uantum **C**ircuits (VOQC), but we have also used it to implement verified versions of several quantum algorithms.
 
 We first presented SQIR and its use in VOQC in our paper [A Verified Optimizer for Quantum Circuits](https://arxiv.org/abs/1912.02250) at POPL 2021. 
@@ -26,12 +32,6 @@ If you are interested in learning more about formal verification of quantum prog
     - [examples](#examples)
   - [Acknowledgements](#acknowledgements)
   - [Citations](#citations)
-
-## RC Extensions (Recursive Countable QHL)
-
-This fork adds a recursive, countable variant of Quantum Hoare Logic on top of SQIR.
-It introduces a recursive command form (`CCall`), countable deterministic assertions (`IConj`), fixed-point semantics for recursive calls, and a weakest-precondition calculus with soundness under stated semantic assumptions.
-New files live in `SQIR/RC_Syntax.v`, `SQIR/RC_Semantics.v`, and `SQIR/RC_Logic.v`, plus example case studies in `SQIR/RUSExample.v`, `SQIR/QFTExample.v`, and `SQIR/QuantumRandomWalkExample.v`.
 
 ## Setup
 
